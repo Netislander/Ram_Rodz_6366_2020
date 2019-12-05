@@ -20,9 +20,11 @@ public class OI {
   // Joystick stick = new Joystick(port);
   // Button button = new JoystickButton(stick, buttonNumber);
 
-  Joystick stick1 = new JoyStick(0);
+  public static OI instance = new OI();
 
-  Button button1 = new JoystickButton(stick1, 1),
+  public Joystick stick1 = new JoyStick(0);
+
+  public Button button1 = new JoystickButton(stick1, 1),
   button2 = new JoystickButton(stick1, 2),
   button3 = new JoystickButton(stick1, 3),
   button4 = new JoystickButton(stick1, 4),
@@ -31,13 +33,17 @@ public class OI {
   button7 = new JoystickButton(stick1, 7),
   button8 = new JoystickButton(stick1, 8);
   
-  double rawAxis0 = exampleStick.getRawAxis(0), 
+  public double rawAxis0 = exampleStick.getRawAxis(0), 
   rawAxis1 = exampleStick.getRawAxis(1),
   rawAxis2 = exampleStick.getRawAxis(2),
   rawAxis3 = exampleStick.getRawAxis(3),
   rawAxis4 = exampleStick.getRawAxis(4),
   rawAxis5 = exampleStick.getRawAxis(5);
 
+
+  public static OI getInstance() {
+    return instance;
+  }
 
   // example: button1.whenPressed(new ExampleCommand());
 
