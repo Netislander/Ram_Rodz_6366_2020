@@ -23,7 +23,6 @@ import frc.robot.subsystems.ExampleSubsystem;
  * project.
  */
 public class Robot extends TimedRobot {
-  
   public static ExampleSubsystem m_subsystem = new ExampleSubsystem();
   public static OI m_oi;
 
@@ -122,7 +121,7 @@ public class Robot extends TimedRobot {
   public void teleopPeriodic() {
     Scheduler.getInstance().run();
 
-    omniMath(1, 1, 1);
+    Double[] motorArr = omniMath(1, 1, 1);
 
   }
 
