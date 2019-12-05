@@ -31,12 +31,12 @@ public class OI {
   button7 = new JoystickButton(stick1, 7),
   button8 = new JoystickButton(stick1, 8);
   
-  double rawAxis0 = exampleStick.getRawAxis(0);
-  double rawAxis1 = exampleStick.getRawAxis(1);
-  double rawAxis2 = exampleStick.getRawAxis(2);
-  double rawAxis3 = exampleStick.getRawAxis(3);
-  double rawAxis4 = exampleStick.getRawAxis(4);
-  double rawAxis5 = exampleStick.getRawAxis(5);
+  double rawAxis0 = exampleStick.getRawAxis(0), 
+  rawAxis1 = exampleStick.getRawAxis(1),
+  rawAxis2 = exampleStick.getRawAxis(2),
+  rawAxis3 = exampleStick.getRawAxis(3),
+  rawAxis4 = exampleStick.getRawAxis(4),
+  rawAxis5 = exampleStick.getRawAxis(5);
 
 
   // example: button1.whenPressed(new ExampleCommand());
