@@ -7,6 +7,8 @@
 
 package frc.robot;
 
+import java.awt.Button;
+
 /**
  * This class is the glue that binds the controls on the physical operator
  * interface to the commands and command groups that allow control of the robot.
@@ -19,6 +21,21 @@ public class OI {
   // number it is.
   // Joystick stick = new Joystick(port);
   // Button button = new JoystickButton(stick, buttonNumber);
+
+  Joystick leftjoy = new JoyStick(0);
+
+  Button button1 = new JoystickButton(leftJoy, 1),
+  button2 = new JoystickButton(leftJoy, 2),
+  button3 = new JoystickButton(leftJoy, 3),
+  button4 = new JoystickButton(leftJoy, 4),
+  button5 = new JoystickButton(leftJoy, 5),
+  button6 = new JoystickButton(leftJoy, 6),
+  button7 = new JoystickButton(leftJoy, 7),
+  button8 = new JoystickButton(leftJoy, 8);
+
+  // example: button1.whenPressed(new ExampleCommand());
+
+
 
   // There are a few additional built in buttons you can use. Additionally,
   // by subclassing Button you can create custom triggers and bind those to
